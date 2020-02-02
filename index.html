@@ -3,45 +3,115 @@
     <head>
         <title>Google</title>
         <style type="text/css">
-            #apps_icon {
-                background-image : url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
-                background-size: 528px 68px;
+            body{
+                font-family: Arial, Verdana, sans-serif;
+                font-size: 13px;
+            }
+            .nav-left {
+
+            }
+            .nav-right {
+                float:right;
+                background-color: violet;
+            }
+            .foot-right {
+                float:right;
+                background-color: tomato;
+            }
+            .logo {
+                height: 92px;
+                width: 272px;
+                margin: 100px auto 100px auto;
+                background-color: orange;
+            }
+            .omnibox {
+                height: 52px;
+                width: 650px;
+                margin:  2px auto 2px auto;
+                background-color: turquoise;
+            }
+            .magnifier {
+                height: 25px;
+                width: 25px;
+                position: relative;
+                top: 5px;
+                left: 25px;
+                background-color: wheat;
+            }
+            .mic {
+                height: 24px;
+                width: 24px;
+                position: relative;
+                top: 6px;
+                right: 40px;
+                background-color: thistle;
+            }
+            input {
+                border-radius: 40px;
+                height: 40px;
+                width: 550px;
+                background-color: yellow;   
+            }
+            .search-buttons{
+                height: 52px;
+                width: 300px;
+                margin:  2px auto 2px auto;
+                background-color: greenyellow;               
+            }
+            div.uk-banner {
+                height: 40px;
+                background-color: gray;
             }
         </style>
     </head>
     <body>
-        <header>
-            <span>
+        <header class="navbar">
+            <span class="nav-left">
                 <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwipybKc8K7nAhVOx4UKHX93CVsQkNQCCAM&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-GB%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw3p-ZLmzCLbd1GTjUFI8G4_" >About</a>
                 <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwipybKc8K7nAhVOx4UKHX93CVsQpMwCCAQ&url=https%3A%2F%2Fstore.google.com%2FGB%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-GB&usg=AOvVaw1TnGnI7L1atYGRMJIuF53R">Store</a>        
             </span>
-            <span>
+            <span class="nav-right">
                 <a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
                 <a href="https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl">Images</a>
                 <a href="https://www.google.co.uk/intl/en/about/products?tab=wh" id="apps_icon">&nbsp; &nbsp; &nbsp; &nbsp; </a>
             </span>
         </header>
-        <div>
+
+        <div class="logo">
             <img src="./googlelogo_color_272x92dp.png" alt="" title="" id="logo">
         </div>
+
         <form>
-            <div>
-                <img src="i1_1967ca6a.png">
+            <div class="omnibox">
+                <span class="magnifier">
+                    <svg class="magnifier" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                    </svg>
+                </span>
                 <input>
-                <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+                <img class="mic" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
             </div>
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
-            <div>
-                <span>Unitied Kingdom</span>
+            <div class="search-buttons">
+                <button class="search">Google Search</button>
+                <button lucky="lucky">I'm Feeling Lucky</button>
             </div>
-            <footer>
-                <span><a href="">Advertising</a><a href="">Business</a><a href="">How Search works</a></span>
-                <span><a href="">Privacy</a><a href="">Terms</a><a href="">Settings</a></span>
-            </footer>
-            </footer>
         </form>
 
+        <div class="uk-banner">
+            <span class="uk-banner">Unitied Kingdom</span>
+        </div>
 
+        <footer class="footer">
+            <span class="foot-left">
+                <a href="https://www.google.com/intl/en_uk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </span>
+            <span class="foot-right">
+                <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
+                <a href="https://policies.google.com/terms?fg=1">Terms</a>
+                <a href="https://www.google.com/preferences?hl=en">Settings</a>
+            </span>
+        </footer>
     </body>
 </html>
