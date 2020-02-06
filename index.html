@@ -9,6 +9,8 @@
             }
             a {
                 text-decoration: none;
+                color: #000;
+                opacity: 0.75;
             }
             a:hover, a:active {
                 text-decoration: underline;
@@ -100,6 +102,13 @@
                 bottom: 40px;
                 width: 100%;
                 border-top: 1px solid #e4e4e4;
+             
+            }
+            span.uk-banner {
+                padding: 10px 20px;
+                font-size: 15px;
+                color: rgba(0,0,0,.54);
+                display: inline-block;
             }
             footer {
                 height: 40px;
@@ -107,18 +116,23 @@
                 position: fixed;
                 bottom: 0%;
                 background: #f2f2f2;
-                border-top: 1px solid #e4e4e4;
-
+                border-top: 1px solid #e4e4e4;               
             }
             footer a {
                 height: 20px;
                 width: 10px;
                 margin: 0px 5px 0px 5px;  
-                padding: 5px 5px 0px 5px;  
+                padding: 5px 5px 0px 5px; 
+            }
+            .foot-left {
+                display: inline-block;
+                padding: 10px;
             }
             .foot-right {
                 float: right;
-                background-color: tomato;
+                /* background-color: tomato; */
+                display: inline-block;
+                padding: 10px;
             }
         </style>
     </head>
@@ -156,7 +170,7 @@
         </form>
 
         <div class="uk-banner">
-            <span class="uk-banner">Unitied Kingdom</span>
+            <span class="uk-banner">United Kingdom</span>
         </div>
 
         <footer>
